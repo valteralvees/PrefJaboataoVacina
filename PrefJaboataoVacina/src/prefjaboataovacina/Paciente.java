@@ -2,9 +2,12 @@ package prefjaboataovacina;
 
 public class Paciente {
     String nome;
-    long cpf;
+    int rg;
     boolean jaVacinado;
     int qtdDoses;
     int loteDose1;
-    int lotedose
+    int lotedose2;
+    int loteDose3;
 }
+
+
