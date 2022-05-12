@@ -13,7 +13,7 @@ public class PrefJaboataoVacina {
         p1.jaVacinado = true;
         p1.qtdDoses=3;
         p1.loteDose1=215485;
-        p1.lotedose2=784596;
+        p1.loteDose2=784596;
         /**/
         
         Scanner teclado = new Scanner(System.in);
@@ -32,26 +32,10 @@ public class PrefJaboataoVacina {
                 switch (escolhaMenu){
                     case 1:
                         System.out.println("1- REGISTRAR NOVA DOSE");
-                        if(p1.qtdDoses==1){
-                            System.out.println("Por favor, digite o Número do lote:");
-                            p1.lotedose2 = teclado.nextInt();
-                            p1.qtdDoses = p1.qtdDoses +1;
-                            System.out.println("2a DOSE REGISTRADA COM SUCESSO");
-                        }else if(p1.qtdDoses ==2){
-                            System.out.println("Por favor, digite o Número do lote:");
-                            p1.loteDose3 = teclado.nextInt();
-                            p1.qtdDoses = p1.qtdDoses +1;
-                            System.out.println("3a DOSE REGISTRADA COM SUCESSO");
-                        }
+                        p1.registrarNovaDose();
                     break;
                     case 2:
-                        System.out.println("PRIMEIRA DOSE: Lote no"+p1.loteDose1);
-                        if(p1.qtdDoses==2){
-                            System.out.println("SEGUNDA DOSE: Lote no"+p1.lotedose2);
-                            
-                        }else if (p1.qtdDoses==3){
-                            System.out.println("TERCEIRA DOSE: Lote no"+p1.loteDose3);
-                        }
+                        p1.gerarLogDoses();
                 }
             }
         }else{
