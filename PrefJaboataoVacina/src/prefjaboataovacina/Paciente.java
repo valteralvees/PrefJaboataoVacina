@@ -11,6 +11,14 @@ public class Paciente {
     int loteDose2;
     int loteDose3;
     
+    Paciente(String nome,int rg, boolean jaVacinado, int qtdDoses){
+        this.nome = nome;
+        this.rg = rg;
+        this.jaVacinado = jaVacinado;
+        this.qtdDoses = qtdDoses;
+    }
+    
+    
     boolean registrarNovaDose(){
         Scanner teclado = new Scanner(System.in);
         boolean doseRegistrada;

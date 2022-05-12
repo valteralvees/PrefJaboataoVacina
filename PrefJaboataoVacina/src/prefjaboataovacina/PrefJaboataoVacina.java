@@ -1,4 +1,3 @@
-
 package prefjaboataovacina;
 import java.util.Scanner;
 
@@ -6,12 +5,10 @@ public class PrefJaboataoVacina {
 
     public static void main(String[] args) {
         int verificaRG, escolhaMenu;
+        Paciente p1 = new Paciente("Marieta Conceição de Lima",9800130,true,2);
+       
+       
         /*Dados já inseridos anteriormente que serão utilizados*/
-        Paciente p1 = new Paciente();
-        p1.nome="Marieta Conceição de Lima";
-        p1.rg= 9800130;
-        p1.jaVacinado = true;
-        p1.qtdDoses=3;
         p1.loteDose1=215485;
         p1.loteDose2=784596;
         /**/
